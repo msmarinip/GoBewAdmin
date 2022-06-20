@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+.login--content__container{
+    max-width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f3fafa;
+    span{
+        font-family: 'Poppins', sans-serif;
+    }
+    .form--login__container{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 20rem;
+        margin-top: 5rem;
+        border: 2px solid #b1d8de;
+        background-color: #b1d8de;
+        border-radius: 5%;
+        .form--login{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            height: 90%;
+            .form--login__input--container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                input{
+                    height: 1.9rem;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    outline: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    padding: 1%;
+                    background-color: #f3fafa;
+                }
+                input:focus{
+                    border: #17252A 2px solid;
+                }
+                ::placeholder{
+                    color: #17252A;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+            .form--login__btn{
+                display: flex;
+                justify-content: center;
+                margin-top: 2%;
+                button{
+                    padding: 2%;
+                    background-color: #82bac6;
+                    border: none;
+                    border-radius: 15px;
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-top: 1%;
+                    color: #17252A;
+                }
+                button:hover{
+                    background-color: #17252A;
+                    color: #f3fafa;
+                }
+            }
+            .form--login--tittle__container{
+                display: flex;
+                justify-content: center;
+                border-bottom: 3px solid #17252A;
+                h1{
+                    color: #17252A;
+                    font-size: 40px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

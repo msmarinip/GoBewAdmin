@@ -1,0 +1,32 @@
+.tableContainer{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.headTable{
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.headTable th{
+    border: 2px solid black;
+}
+
+.bodyTable{
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.bodyTable tr{
+    background-color: #fff;
+    
+}
+
+.bodyTable td{
+    border-right: 2px solid black;
+}

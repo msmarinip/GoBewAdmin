@@ -1,0 +1,213 @@
+.users--content__container{
+    max-width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    .users--buttons__container{
+        width: 87%;
+        height: 1rem;
+        padding: 1.2%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #b1d8de ;
+        border-radius: 8px;
+        background-color: #b1d8de;
+        button{
+                    padding: 2px;
+                    background-color: #82bac6;
+                    border: none;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-top: 1%;
+                    color: #17252A;
+                    height: 30px;
+                    width: 200px;
+                }
+        .input--text{
+            height: 1.5rem;
+            width: 30rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        .users--btn-radio__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .label--filter{
+                font-family: 'Poppins', sans-serif;
+                
+            }
+            .input--radio__btn{
+                margin-left: 16px;
+            }
+        }
+    }
+    .users--table{
+        width: 90%;
+        border: 2px solid #17252a;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        .users--table__headers{
+            background-color: #b1d8de;
+            height: 2rem;
+            border: 2px solid #17252a;
+            th{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .users--table__column--name{
+                width: 40rem;
+            }
+            .users--table__column--lastName{
+                width: 5rem;
+                text-align: center;
+            }
+            .users--table__column--email{
+                width: 5rem;
+                text-align: center;
+            }
+            .users--table__column--active{
+                width: 30rem;
+                text-align: center;
+            }
+            .users--table__column--admin{
+                width: 5rem;
+                text-align: center;
+            }
+            .users--table__column--superAdmin{
+                width: 5rem;
+                text-align: center;
+            }
+        }
+        .users--table__body{
+            tr:nth-child(even){
+                background-color: #b1d8de;
+                :disabled{
+                    background: #b1d8de;
+                }
+                :enabled{
+                    background: #b1d8de;
+                }
+            }
+            tr{
+                .field--active{
+                    input{
+                        text-align: center;
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .field--admin{
+                    input{
+                        text-align: center;
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .field--google{
+                    text-align: center;
+                    input{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .field--superAdmin{
+                    text-align: center;
+                    input{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .field--actions{
+                    text-align: center;
+                    button{
+                        background:none;
+                        border: none;
+                        margin: 4%
+                    }
+                }
+                .field--email{
+                    font-family: 'Poppins', sans-serif;
+                }
+                .field--name{
+                    font-family: 'Poppins', sans-serif;
+                }
+                .field--lastName{
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                outline: none;
+            }
+        }
+    }
+    .users--title__content{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 600;
+            font-style: italic;
+            color: #17252A;
+        }
+    }
+    .users--pagination__container{
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-left: 2rem;
+        margin-top: .6rem ;
+        ul{
+            display: flex;
+            width: 20%;
+            justify-content: left;
+            li{
+                margin: 2px;
+                border: 1px solid #17252A;
+                // padding: 3px;
+                // height: 16px;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #b1d8de;
+                color: #17252A;
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 2%;
+                    width: 100%;
+                    cursor: default;
+                    user-select: none;
+                }
+            }
+            .selected{
+                background-color: #17252A;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+// style={{ width: "99%", height: "99%", border: "none", fontSize: "20px", background: "white", color: "black" }}
+// style={{ width: "99%", height: "99%", border: "none", fontSize: "20px", background: "white", color: "black" }}

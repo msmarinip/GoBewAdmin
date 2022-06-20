@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.orders--content__container {
+    max-width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    .orders--title__content {
+        margin-top: 1rem;
+        margin-left: 2rem;
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 600;
+            font-style: italic;
+            color: #17252A;
+
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            font-style: italic;
+            color: #17252A;
+        }
+    }
+
+    .orders--filter__content {
+        width: 5rem;
+        height: 1rem;
+        padding: 1.2%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #b1d8de;
+        border-radius: 8px;
+        background-color: #b1d8de;
+
+        button {
+            padding: 2px;
+            background-color: #82bac6;
+            border: none;
+            border-radius: 15px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            color: #17252A;
+            height: 30px;
+            width: 92px;
+        }
+    }
+
+    .orders--table {
+        width: 90%;
+        border: 2px solid #17252a;
+        margin-left: 2rem;
+        margin-top: 1rem;
+
+        .orders--table__headers {
+            background-color: #b1d8de;
+            height: 2rem;
+            border: 2px solid #17252a;
+
+            th {
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .orders--table__column--idOrder {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--firstName {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--lastName {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--date {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--totPrice {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--send {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--recieve {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--cancel {
+                width: auto;
+                text-align: center;
+            }
+
+            .orders--table__column--detail {
+                width: auto;
+                text-align: center;
+            }
+        }
+
+        .orders--table__body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+
+            tr:nth-child(even) {
+                background-color: #b1d8de;
+
+                :disabled {
+                    background: #b1d8de;
+                }
+
+                :enabled {
+                    background: #b1d8de;
+                }
+            }
+
+            tr {
+                .field--idOrder {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--userFirstName {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--userLastName {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--date {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--totalPrice {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--buttonDetail {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--order__send {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--order__recieve {
+                    text-align: center;
+                    outline: none;
+                }
+
+                .field--order__cancel {
+                    text-align: center;
+                    outline: none;
+                }
+
+            }
+        }
+    }
+
+    .orders--details {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        min-height: auto;
+        border: 3px solid #17252A;
+        border-radius: 1%;
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        .orders--detail__status {
+            display: flex;
+
+            .orders--detail__status__info {
+                display: flex;
+                margin-left: 1rem;
+            }
+        }
+
+        .orders--details__cart {
+            display: flex;
+            margin-right: 2rem;
+
+            .orders--details__cart__cant {
+                margin-left: 3rem;
+            }
+
+            .orders--details__cart__price {
+                margin-left: auto;
+            }
+        }
+
+        .orders--details__final {
+            display: flex;
+            margin-left: 3rem;
+            margin-right: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            align-self: flex-end;
+
+            //justify-content: space-around;
+            .orders--details__final__price {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .orders--pagination__container {
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-left: 2rem;
+        margin-top: .6rem;
+
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-left: 2rem;
+        margin-top: .6rem;
+
+        ul {
+            display: flex;
+            width: 20%;
+            justify-content: left;
+
+            li {
+                margin: 2px;
+                border: 1px solid #17252A;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #b1d8de;
+                color: #17252A;
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 2%;
+                    width: 100%;
+                    cursor: default;
+                    user-select: none;
+                }
+            }
+
+            .selected {
+                background-color: #17252A;
+                color: white;
+            }
+        }
+    }
+}
